@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26733ddc-5b74-4e5f-b449-9bb8f2cc8871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1632165599152</updated>
       <workItem from="1632165601316" duration="928000" />
+      <workItem from="1632167825495" duration="596000" />
+      <workItem from="1632172351473" duration="595000" />
     </task>
     <servers />
   </component>
