@@ -27,6 +27,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Movement();
+    }
+
+    void Movement()
+    {
         //makes move and fall 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -57,7 +62,6 @@ public class PlayerMovement : MonoBehaviour
 
         //apply velocity to move down
         controller.Move(velocity * Time.deltaTime);
-        
     }
 
 }
