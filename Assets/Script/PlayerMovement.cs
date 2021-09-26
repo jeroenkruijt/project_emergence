@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
         
+        
         //makes the gravity build up
         velocity.y += gravity * Time.deltaTime;
 

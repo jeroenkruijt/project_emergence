@@ -4,7 +4,9 @@
     <list default="true" id="26733ddc-5b74-4e5f-b449-9bb8f2cc8871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ShootScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ShootScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Target.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,9 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/ShootScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Target.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/ShootScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yPuZ2qpegboQyfWkRg6e4LJLF4" />
@@ -76,6 +79,8 @@
       <workItem from="1632172351473" duration="595000" />
       <workItem from="1632315021344" duration="41000" />
       <workItem from="1632315500730" duration="4191000" />
+      <workItem from="1632379746059" duration="5789000" />
+      <workItem from="1632396447764" duration="1072000" />
     </task>
     <servers />
   </component>
