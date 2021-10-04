@@ -28,14 +28,17 @@ public class ShootScript : MonoBehaviour
         //if raycast var hit hits a collision makes it true and debug.log the name of the object
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
+            //testing what if the variable gets filled correctly 
             Debug.Log(hit.transform.name);
 
+            //gets the value for target() script is in the object 
             Target target = hit.transform.GetComponent<Target>();
+            
+            //checks if the target doesnt come back as null
             if (target != null)
             {
+                //puts the variable damage to the target script on the item you have hit
                 target.takeDamage(damage);
-                
-                
             }
         }
     }
