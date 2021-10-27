@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     private float timer;
     private float timeElapsed = 0;
-    private float spawnFreq;
+    private float spawnFreq = 5f;
 
     public void SpawnZombies(int amount) {
 
@@ -27,11 +27,16 @@ public class EnemySpawner : MonoBehaviour
         }
 
         timer = Time.time;
-        
 
-        if(Time.time - timeElapsed > 5f) {
-            SpawnZombies(5);
+        if(Time.time - timeElapsed > spawnFreq) {
+            SpawnZombies(AmountZombies());
         }
+    }
+
+    private int AmountZombies() {
+        var amount = (timer * timer) * .005f +1;
+        Debug.Log(Mathf.RoundToInt(amount));
+        return Mathf.RoundToInt(amount);
     }
 
 }
