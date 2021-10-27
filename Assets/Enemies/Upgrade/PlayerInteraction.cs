@@ -30,7 +30,7 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
 
-        if (!successfulHit) interactionText.text = "AAA";
+        if (!successfulHit) interactionText.text = "";
     }
     void HandleInteraction(Interactable interactable) {
         KeyCode key = KeyCode.E;
