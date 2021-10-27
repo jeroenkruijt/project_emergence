@@ -7,11 +7,14 @@ public class Upgrades : ScriptableObject
 {
     [System.Serializable]
     public class Upgrade {
-        public string popupText;
-        public float damage;
-        public float bulletSpread;
-        public float enemyKnockback;
-        public int extraBullet;
+        public float shootForce;
+        public float upwardForce;
+        public float timeBetweenShooting;
+        public float spread;
+        public float reloadTime;
+        public float timeBetweenShots;
+        public int magazineSize;
+        public int bulletsPerTap;
     }
     [Header("Define the Upgrade")]
     public Upgrade upgradeInfo;

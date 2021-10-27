@@ -27,7 +27,6 @@ public class PlayerInteraction : MonoBehaviour
                 HandleInteraction(interactable);
                 interactionText.text = interactable.GetDescription();
                 successfulHit = true;
-                Debug.Log("I hit");
             }
         }
 
