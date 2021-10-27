@@ -9,9 +9,8 @@ public class PlayerInteraction : MonoBehaviour
 
     public TMPro.TextMeshProUGUI interactionText;
     Camera cam;
-    //Camera c = transform.FindChild("PoV Camera").gameObject.camera;
+
     private void Start() {
-        //cam = transform.FindChild("Main Camera").GetComponent<Camera>();
         cam = transform.Find("Main Camera").GetComponent<Camera>();
     }
 

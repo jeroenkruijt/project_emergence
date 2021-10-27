@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Upgrade : Interactable
+public class UpgradePickUp : Interactable
 {
     public Light m_Light;
     public bool pickedUp;
