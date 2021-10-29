@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Upgrade", menuName = "Upgrade Pickup")]
 public class Upgrades : ScriptableObject
 {
+    [Header("Define the Upgrade")]
+    public Upgrade upgradeInfo;
+    public string upgradeText;
     [System.Serializable]
     public class Upgrade {
         public float shootForce;
@@ -16,6 +19,6 @@ public class Upgrades : ScriptableObject
         public int magazineSize;
         public int bulletsPerTap;
     }
-    [Header("Define the Upgrade")]
-    public Upgrade upgradeInfo;
+    
+    
 }

@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: more damage
   m_EditorClassIdentifier: 
   upgradeInfo:
-    popupText: 
-    damage: 10
-    bulletSpread: 0
-    enemyKnockback: 0
-    extraBullet: 0
+    shootForce: 10
+    upwardForce: 0
+    timeBetweenShooting: 0
+    spread: 0
+    reloadTime: 0
+    timeBetweenShots: 0
+    magazineSize: 0
+    bulletsPerTap: 0
+  upgradeText: + 10 shoot force

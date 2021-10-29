@@ -232,6 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   agent: {fileID: 265455371968915752}
+  upgrade: {fileID: 5280079762382927436, guid: dfdd6e97e7f3f204c93a6801b555e528, type: 3}
 --- !u!1 &1241417926178441320
 GameObject:
   m_ObjectHideFlags: 0

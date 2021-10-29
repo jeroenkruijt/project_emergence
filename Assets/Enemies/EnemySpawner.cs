@@ -34,7 +34,7 @@ public class EnemySpawner : MonoBehaviour
     }
 
     private int AmountZombies() {
-        var amount = (timer * timer) * .005f +1;
+        var amount = (timer * timer) * .0005f +1;
         Debug.Log(Mathf.RoundToInt(amount));
         return Mathf.RoundToInt(amount);
     }
