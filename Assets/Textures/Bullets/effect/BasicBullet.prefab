@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4661858525425090012}
   - component: {fileID: 4661858525425090011}
   - component: {fileID: 4661858525425090015}
-  - component: {fileID: 4661858525425090009}
   - component: {fileID: 7477204881724816630}
   - component: {fileID: -1946433252552790563}
+  - component: {fileID: 5900208931153380768}
   m_Layer: 14
   m_Name: BasicBullet
   m_TagString: Bullet
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a9a3901c3d23098458bb8a13df34b845, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2369,6 +2369,7 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
+  m_Mesh: {fileID: 0}
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2389,79 +2390,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
---- !u!114 &4661858525425090009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4661858525425090008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce7d0e97d58591945b59aba8af091cbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activated: 1
-  rb: {fileID: 4661858525425090015}
-  explosion: {fileID: 924385698551278738, guid: 26d7cbf3864b1f84cb93f20ea9ca807f,
-    type: 3}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 2048
-  bounciness: 1
-  useGravity: 0
-  explosionDamage: 50
-  explosionRange: 0.4
-  explosionForce: 0
-  maxCollisions: 1
-  maxLifetime: 6
-  explodeOnTouch: 1
-  secondBullet: {fileID: 0}
-  sb_amount: 0
-  sb_forwardForce: 0
-  sb_upwardForce: 0
-  sb_randomForce: 0
-  scaleGrowingSpeed: 0
-  damageGrowingSpeed: 0
-  maxScale: 0
-  maxDamage: 0
-  stickToObjects: 0
-  checkForEnemies: 0
-  checkRange: 0
-  objectToSpawn: {fileID: 0}
-  timeBetweenSpawns: 0
-  preferredSpawnPoints: []
-  maxSpawnAmount: 0
-  nameOfObjectToTp: 
-  tpOnFirstCollision: 0
-  tpOnEveryCollision: 0
-  tpOnExplosion: 0
-  switchPlaces: 0
-  timeBeforeVanish: 0
-  timeBetweenVanishAndAppear: 0
-  dontAppearAgain: 0
-  canStillExplodeWhenVanished: 0
-  canTravelThroughtWallsWhileVanished: 0
-  repeat: 0
-  useSmoothAutoAim: 0
-  useInsaneAutoAim: 0
-  autoAimIntensity: 0
-  autoAimDetectRange: 0
-  autoAimStopRange: 0
-  timeBeforeDropping: 0
-  waitMidAir: 0
-  dropForce: 0
-  explodeDirectlyAfterDrop: 1
-  smokeEffect: {fileID: 0}
-  useCustomGravity: 0
-  gravityDirection: {x: 0, y: 0, z: 0}
-  gravityStrength: 0
-  playerObjectName: 
-  dashForce: 0
-  dashDelay: 0.2
-  chargeTime: 0
-  chargedVelocityMultiplier: 0
-  alreadyExploded: 0
 --- !u!135 &7477204881724816630
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2582,3 +2510,17 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &5900208931153380768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4661858525425090008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2548fb8544546f9418ccb56f7a04fbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPos: {fileID: 0}
+  IsPlayerFlash: 0
