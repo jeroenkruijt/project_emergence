@@ -16244,6 +16244,7 @@ Transform:
 --- !u!1001 &755448902
 PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -16309,6 +16310,16 @@ Mesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: pb_Mesh21214
+=======
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+  m_Name: pb_Mesh73820
+=======
+  m_Name: pb_Mesh16636
+>>>>>>> world_desing_v2
+>>>>>>> shooting_Projectiles
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
