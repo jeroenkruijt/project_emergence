@@ -71,6 +71,7 @@ public class Projectile_shooting : MonoBehaviour
 
     private void Shoot()
     {
+        
         readyToShoot = false;
 
         //Find the exact hit position using a raycast
