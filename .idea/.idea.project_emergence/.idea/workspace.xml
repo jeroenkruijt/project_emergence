@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="26733ddc-5b74-4e5f-b449-9bb8f2cc8871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/import_map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/import_map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemies/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemies/Prefabs/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/Split.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/Split.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
