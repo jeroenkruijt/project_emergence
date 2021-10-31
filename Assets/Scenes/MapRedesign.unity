@@ -4143,14 +4143,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7244413832506592094, guid: 11c9f4616363add408ae46ae5ef6c0c1, type: 3}
-  shootForce: 300
+  shootForce: 100
   upwardForce: 0
-  timeBetweenShooting: 0.1
-  spread: 0
-  reloadTime: 0
-  timeBetweenShots: 0
-  magazineSize: 1000
-  bulletsPerTap: 200
+  timeBetweenShooting: 1
+  spread: 3
+  reloadTime: 1.5
+  timeBetweenShots: 1
+  magazineSize: 31
+  bulletsPerTap: 1
   allowButtonHold: 1
   fpsCam: {fileID: 1588966753}
   attackPoint: {fileID: 189292394}
