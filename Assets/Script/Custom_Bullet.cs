@@ -59,7 +59,8 @@ public class Custom_Bullet : MonoBehaviour
             //Get component of enemy and call Take Damage
 
             //Just an example!
-            ///enemies[i].GetComponent<ShootingAi>().TakeDamage(explosionDamage);
+            enemies[i].GetComponent<EnemyController>().takeDamage(explosionDamage);
+            //Debug.Log(enemies[i]);
 
             //Add explosion force (if enemy has a rigidbody)
             if (enemies[i].GetComponent<Rigidbody>())
