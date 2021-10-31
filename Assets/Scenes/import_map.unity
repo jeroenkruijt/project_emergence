@@ -1113,6 +1113,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8108563764783910780, guid: b46f2ce9dbed3c54ab2b550c95e57b97, type: 3}
+--- !u!114 &2065669717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065669712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced490d84e1c8c64f88a059c9f61dc1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  agent: {fileID: 0}
+  upgrade: {fileID: 0}
 --- !u!1 &2111394372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,8 +1174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db8c8c9bb93d1e4ab420e1379222eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 7244413832506592094, guid: 11c9f4616363add408ae46ae5ef6c0c1, type: 3}
-  shootForce: 300
+  bullet: {fileID: 7244413832506592094, guid: 70169c2b0d882a243bb18b4690076f9c, type: 3}
+  shootForce: 70
   upwardForce: 0
   timeBetweenShooting: 0.1
   spread: 0
