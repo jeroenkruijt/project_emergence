@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7244413832506592095}
   - component: {fileID: 7244413832506592037}
   m_Layer: 0
-  m_Name: split_spawned
+  m_Name: grenade_pushnback
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7244413832506592094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.26, y: 153.22595, z: 447.41}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1707765aa6463184da76b52cdbea3d0c, type: 2}
+  - {fileID: 2100000, guid: 12eb0182bd579e443bbe55cb49e5830a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -127,17 +127,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7244413832506592032}
-  explosion: {fileID: 2291373124182283588, guid: 8bd364d94d644464ab90a29d76ecbc7d, type: 3}
+  explosion: {fileID: 5985957094995889727, guid: ec613ae8fe37a934ab87a43bc32bde21, type: 3}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
-  bounciness: 0.1
+  bounciness: 0.684
   useGravity: 1
-  explosionDamage: 20
+  explosionDamage: 0
   explosionRange: 5
-  explosionForce: 5
-  maxCollisions: 10
-  maxLifetime: 1
+  explosionForce: 50
+  maxCollisions: 3
+  maxLifetime: 2.5
   explodeOnTouch: 1
   secondBullet: {fileID: 0}
   sb_amount: 0
@@ -206,7 +206,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.5943396, g: 0.52906567, b: 0.075694196, a: 1}
+      key0: {r: 1, g: 0, b: 0, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

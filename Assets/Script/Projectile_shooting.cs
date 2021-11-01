@@ -5,30 +5,35 @@ public class Projectile_shooting : MonoBehaviour
  //bullet 
     public GameObject bullet;
 
-    //bullet force
-    public float shootForce, upwardForce;
+    [Header("add force to the bullet:")]
+    public float shootForce; 
+    public float upwardForce;
 
-    //Gun stats
-    public float timeBetweenShooting, spread, reloadTime, timeBetweenShots;
-    public int magazineSize, bulletsPerTap;
+    [Header("Set the basic stats:")]
+    public float timeBetweenShooting;
+    public float spread;
+    public float reloadTime;
+    public float timeBetweenShots;
+    public int magazineSize;
+    public int bulletsPerTap;
     public bool allowButtonHold;
 
-    int bulletsLeft, bulletsShot;
-
-    //Recoil
-    // public Rigidbody playerRb;
-    // public float recoilForce;
+    [Header("Set the basic stats:")] 
+    private int bulletsLeft; 
+    private int bulletsShot;
 
     //bools
     bool shooting, readyToShoot, reloading;
 
-    //Reference
+    [Header("two points for shooting coming from going to:")]
     public Camera fpsCam;
     public Transform attackPoint;
 
-    //Graphics
+    [Header("grapics:")]
     public GameObject muzzleFlash;
     public TextMeshProUGUI ammunitionDisplay;
+    public AudioSource Shotsound;
+    
 
     //bug fixing :D
     public bool allowInvoke = true;
@@ -71,6 +76,7 @@ public class Projectile_shooting : MonoBehaviour
 
     private void Shoot()
     {
+        
         readyToShoot = false;
 
         //Find the exact hit position using a raycast
