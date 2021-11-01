@@ -491,10 +491,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1200086106}
   speed: 12
-  gravity: -20
-  jumpHeight: 3
+  gravity: -10
+  jumpHeight: 4
   groundCheck: {fileID: 527418015}
-  groundDistance: 0.4
+  groundDistance: 0.2
   groundMask:
     serializedVersion: 2
     m_Bits: 128
@@ -1188,6 +1188,7 @@ MonoBehaviour:
   attackPoint: {fileID: 650183285}
   muzzleFlash: {fileID: 2957657415812638113, guid: 50f6becef77af1d4b99006061c5e99de, type: 3}
   ammunitionDisplay: {fileID: 1251069541}
+  Shotsound: {fileID: 0}
   allowInvoke: 1
 --- !u!23 &2111394375
 MeshRenderer:
