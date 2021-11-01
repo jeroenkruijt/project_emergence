@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7244413832506592095}
   - component: {fileID: 7244413832506592037}
   m_Layer: 0
-  m_Name: Split 1
+  m_Name: split_forward
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,19 +131,19 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
-  bounciness: 0
+  bounciness: 1
   useGravity: 1
-  explosionDamage: 500
-  explosionRange: 500
+  explosionDamage: 30
+  explosionRange: 5
   explosionForce: 5
   maxCollisions: 1
-  maxLifetime: 0.1
+  maxLifetime: 0.2
   explodeOnTouch: 1
   secondBullet: {fileID: 7244413832506592094, guid: 7036c04c5265fa84ebaea695a453d9db, type: 3}
   sb_amount: 7
-  sb_forwardForce: 0
+  sb_forwardForce: 10
   sb_upwardForce: 0
-  sb_randomForce: 10
+  sb_randomForce: 0
 --- !u!96 &7244413832506592037
 TrailRenderer:
   serializedVersion: 2

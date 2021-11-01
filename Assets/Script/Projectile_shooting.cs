@@ -32,6 +32,8 @@ public class Projectile_shooting : MonoBehaviour
     [Header("grapics:")]
     public GameObject muzzleFlash;
     public TextMeshProUGUI ammunitionDisplay;
+    public AudioSource Shotsound;
+    
 
     //bug fixing :D
     public bool allowInvoke = true;
