@@ -5,7 +5,12 @@ using UnityEngine;
 public class blueprint : MonoBehaviour
 {
     public float buildDistance = 3f;
-
+    public enum BuildState {
+        Idle,
+        Blueprint,
+        Building
+    };
+    BuildState state;
     Camera cam;
     public GameObject blueprintPrefab;
     public GameObject WallPrefab;
@@ -14,21 +19,43 @@ public class blueprint : MonoBehaviour
 
     private void Start() {
         cam = transform.Find("Main Camera").GetComponent<Camera>();
+        state = BuildState.Idle;
     }
 
     private void Update() {
-
-        if (Input.GetKeyDown(KeyCode.G) || Input.GetMouseButtonDown(0) && blueprintActive) {
+        /*/build wall in place of blueprint
+        if (Input.GetKeyDown(KeyCode.Q) && blueprintActive) {
             Instantiate(WallPrefab, blueprintPrefab.transform.position, transform.rotation);
             building = false;
             blueprintActive = false;
             blueprintPrefab.GetComponent<MeshRenderer>().enabled = blueprintActive;
         } 
-        if (Input.GetKeyDown(KeyCode.G) || building == true) {
+        //show blueprint
+        if (Input.GetKeyDown(KeyCode.Q) && building == false) {
             building = true;
             RaycastBlueprint();
+        }*/
+        switch(state) {
+            case BuildState.Idle:
+                if (Input.GetKeyDown(KeyCode.Q)) { state = BuildState.Blueprint; }
+                break;
+            case BuildState.Blueprint:
+                building = true;
+                RaycastBlueprint();
+                if (Input.GetKeyDown(KeyCode.Q) && blueprintActive) { state = BuildState.Building; }
+                if (Input.GetKeyDown(KeyCode.Escape)) { state = BuildState.Idle; }
+                break;
+            case BuildState.Building:
+                Instantiate(WallPrefab, blueprintPrefab.transform.position, transform.rotation);
+                building = false;
+                blueprintActive = false;
+                blueprintPrefab.GetComponent<MeshRenderer>().enabled = blueprintActive;
+                state = BuildState.Idle;
+                break;
+            default:
+                state = BuildState.Idle;
+                break;
         }
-
 
 
         if (Input.GetKeyDown(KeyCode.Escape)) building = false;
@@ -51,17 +78,4 @@ public class blueprint : MonoBehaviour
         //Set mesh renderer visible if blueprint is active and in build range
         blueprintPrefab.GetComponent<MeshRenderer>().enabled = blueprintActive;
     }
-    /*
-    private void ShowBlueprint() {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit, 50000.0f, (1 << 8))) {
-            transform.position = hit.point;
-        }
-
-        if (Input.GetKeyDown(KeyCode.G)) {
-            Instantiate(prefab, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
-    }*/
 }
