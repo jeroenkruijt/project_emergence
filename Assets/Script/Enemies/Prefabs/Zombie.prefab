@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 265455371968915752}
   - component: {fileID: 265455371968915753}
   - component: {fileID: 2232071720478242448}
+  - component: {fileID: -7279448794556281606}
   m_Layer: 8
   m_Name: Zombie
   m_TagString: Enemy
@@ -173,7 +174,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
@@ -245,9 +246,23 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.82234764
-  m_Height: 2.9558783
+  m_Height: 2.0592947
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9779391, z: 0.11408138}
+  m_Center: {x: 0, y: 0.93393683, z: 0.11408138}
+--- !u!64 &-7279448794556281606
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111966418008883924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 0}
 --- !u!1 &1241417926178441320
 GameObject:
   m_ObjectHideFlags: 0

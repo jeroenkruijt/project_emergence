@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26733ddc-5b74-4e5f-b449-9bb8f2cc8871" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade_pushnback.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/split_forward.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/import_map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/import_map.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Enemies/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemies/Prefabs/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Projectile_shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Projectile_shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/Split 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/split_forward.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/Split 1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade_pushnback.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/Split.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/Split.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/split_spawned.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/split_spawned.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +23,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/ShootScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/CustomBullet (1).cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/ProjectileGunTutorial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/PickUp &amp; Drop (Project file)/PickUp &amp; Drop (Project file)/Assets/Scripts/All others ^^/Destroy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -98,6 +100,7 @@
       <workItem from="1635595182667" duration="546000" />
       <workItem from="1635595773948" duration="625000" />
       <workItem from="1635689572669" duration="710000" />
+      <workItem from="1635759988031" duration="1599000" />
     </task>
     <servers />
   </component>
