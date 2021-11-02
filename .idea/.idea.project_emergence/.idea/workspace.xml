@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26733ddc-5b74-4e5f-b449-9bb8f2cc8871" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade_pushnback.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade_pushnback.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ImportMapBullet.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ImportMapBullet.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ImportMapGrenade.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ImportMapGrenade.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ImportMapSplit.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ImportMapSplit.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/import_map.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/import_map/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/import_map/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/PauseMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu_demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu_demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/import_map.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/import_map.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Bullets/grenade.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +41,7 @@
       <option value="$PROJECT_DIR$/Assets/Script/ShootScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Destroy.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yPuZ2qpegboQyfWkRg6e4LJLF4" />

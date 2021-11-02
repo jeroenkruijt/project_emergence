@@ -5,10 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: e71457499a1496745a2bac49a636fa91
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MapRedesign.unity
     guid: 6399e7c87e3dfd043adf20a17fe90479
+  - enabled: 1
+    path: Assets/Scenes/MainMenu_demo.unity
+    guid: 19ddf46ffc420f84d9bb6e83c6a05dd9
+  - enabled: 1
+    path: Assets/Scenes/ImportMapBullet.unity
+    guid: 40f50e783cb524046a04e4bbdb5d7c74
+  - enabled: 1
+    path: Assets/Scenes/ImportMapGrenade.unity
+    guid: 4dc109e42ebbe264a9f592d8fb4d6ec4
+  - enabled: 1
+    path: Assets/Scenes/ImportMapSplit.unity
+    guid: 1a2485413167b7a4da5af03a99ef7d1c
   m_configObjects: {}
