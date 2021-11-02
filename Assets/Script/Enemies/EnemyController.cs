@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour
     public GameObject upgrade;
 
     Animator anim;
+    public float attackSpeed = 1f;
+    private float attackCooldown = 0f;
 
     //HP stuff
     private float hp = 100;
@@ -23,6 +25,7 @@ public class EnemyController : MonoBehaviour
     {
         agent.SetDestination(player.transform.position);
         if (Input.GetKeyDown(KeyCode.H)) takeDamage(40);
+        attackCooldown -= Time.deltaTime;
     }
 
     public void takeDamage(float damage) {
@@ -51,6 +54,11 @@ public class EnemyController : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             anim.SetTrigger("attack");
+            if(attackCooldown <= 0f)
+            {
+                other.GetComponent<PlayerHealth>().TakeDamage(10);
+                attackCooldown = 2f / attackSpeed;
+            }
         }
     }
 }
