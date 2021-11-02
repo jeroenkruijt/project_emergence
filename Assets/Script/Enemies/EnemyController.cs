@@ -9,12 +9,15 @@ public class EnemyController : MonoBehaviour
     public NavMeshAgent agent;
     public GameObject upgrade;
 
+    Animator anim;
+
     //HP stuff
     private float hp = 100;
 
     private void Start() {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        anim = GetComponent<Animator>();
     }
     void Update()
     {
@@ -41,5 +44,13 @@ public class EnemyController : MonoBehaviour
 
     private void SpawnUpgrade() {
         Instantiate(upgrade, transform.position, Quaternion.identity);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            anim.SetTrigger("attack");
+        }
     }
 }
