@@ -5840,8 +5840,8 @@ GameObject:
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &180917709
 Transform:
@@ -11331,7 +11331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2065704005}
-  m_RootOrder: 433
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 91.935, y: 38.892, z: 0}
 --- !u!1001 &349599297
 PrefabInstance:
@@ -23808,7 +23808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2065704005}
-  m_RootOrder: 587
+  m_RootOrder: 250
   m_LocalEulerAnglesHint: {x: 91.935, y: 38.892, z: 0}
 --- !u!1 &721782013
 GameObject:
@@ -29676,7 +29676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2065704005}
-  m_RootOrder: 503
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 91.935, y: 38.892, z: 0}
 --- !u!1001 &885343815
 PrefabInstance:
@@ -39849,8 +39849,8 @@ GameObject:
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1186872178
 Transform:
@@ -52199,7 +52199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddbd781f3eb322b48bd9bf799a691d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 1000
+  mouseSensitivity: 150
   playerBody: {fileID: 115135801}
 --- !u!81 &1588966752
 AudioListener:
@@ -55466,7 +55466,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2065704005}
-  m_RootOrder: 558
+  m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 91.935, y: 38.892, z: 0}
 --- !u!1001 &1691995235
 PrefabInstance:
@@ -57173,8 +57173,8 @@ GameObject:
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1737932248
 Transform:
@@ -57343,7 +57343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2065704005}
-  m_RootOrder: 562
+  m_RootOrder: 137
   m_LocalEulerAnglesHint: {x: 91.935, y: 38.892, z: 0}
 --- !u!1001 &1746486664
 PrefabInstance:
@@ -67276,7 +67276,9 @@ Transform:
   - {fileID: 204581962}
   - {fileID: 197724689}
   - {fileID: 1390683053}
+  - {fileID: 349489552}
   - {fileID: 759729372}
+  - {fileID: 884968172}
   - {fileID: 1153951033}
   - {fileID: 674458001}
   - {fileID: 371278539}
@@ -67311,6 +67313,7 @@ Transform:
   - {fileID: 789687090}
   - {fileID: 1544298005}
   - {fileID: 283007229}
+  - {fileID: 1691074988}
   - {fileID: 16514218}
   - {fileID: 1194773756}
   - {fileID: 1506439456}
@@ -67389,6 +67392,7 @@ Transform:
   - {fileID: 1141896093}
   - {fileID: 879554461}
   - {fileID: 577704619}
+  - {fileID: 1740314681}
   - {fileID: 934238}
   - {fileID: 530347068}
   - {fileID: 1874604068}
@@ -67501,6 +67505,7 @@ Transform:
   - {fileID: 511291513}
   - {fileID: 723540463}
   - {fileID: 1608492387}
+  - {fileID: 721652932}
   - {fileID: 1571505798}
   - {fileID: 542151884}
   - {fileID: 1889014321}
@@ -67688,7 +67693,6 @@ Transform:
   - {fileID: 1530531868}
   - {fileID: 434404499}
   - {fileID: 1564000961}
-  - {fileID: 349489552}
   - {fileID: 181879796}
   - {fileID: 1810347631}
   - {fileID: 1872673765}
@@ -67758,7 +67762,6 @@ Transform:
   - {fileID: 1061040605}
   - {fileID: 160843047}
   - {fileID: 754362536}
-  - {fileID: 884968172}
   - {fileID: 302875774}
   - {fileID: 1595699256}
   - {fileID: 1288088723}
@@ -67813,11 +67816,9 @@ Transform:
   - {fileID: 356397982}
   - {fileID: 812672587}
   - {fileID: 1548248160}
-  - {fileID: 1691074988}
   - {fileID: 684795183}
   - {fileID: 1125432768}
   - {fileID: 821801165}
-  - {fileID: 1740314681}
   - {fileID: 14756139}
   - {fileID: 2006862026}
   - {fileID: 669202076}
@@ -67842,7 +67843,6 @@ Transform:
   - {fileID: 433037294}
   - {fileID: 91893701}
   - {fileID: 683268854}
-  - {fileID: 721652932}
   - {fileID: 1713708595}
   - {fileID: 88554807}
   - {fileID: 702829593}
