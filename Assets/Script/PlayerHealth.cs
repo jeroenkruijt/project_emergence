@@ -17,13 +17,14 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Putting Arena here because we are going to be using the arena
     void Update()
     {
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene("MapRedesign");
+            SceneManager.LoadScene("Arena");
         }
-           
+    
     }
 
     public void TakeDamage(int damage)
