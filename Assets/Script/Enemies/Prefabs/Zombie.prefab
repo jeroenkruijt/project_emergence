@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 5095714923199850243}
   - component: {fileID: 6359321428480016449}
   - component: {fileID: 7326066769043729396}
+  - component: {fileID: -6138918656282653028}
   m_Layer: 8
   m_Name: Zombie
   m_TagString: Enemy
@@ -236,6 +237,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 265455371968915752}
   upgrade: {fileID: 5280079762382927436, guid: dfdd6e97e7f3f204c93a6801b555e528, type: 3}
+  attackSpeed: 1
 --- !u!65 &5095714923199850243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -359,6 +361,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6138918656282653028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111966418008883924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b4b010fa70e61d47ab0e087504cc168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!1 &1241417926178441320
 GameObject:
   m_ObjectHideFlags: 0
