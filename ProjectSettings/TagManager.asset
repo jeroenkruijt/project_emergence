@@ -12,6 +12,8 @@ TagManager:
   - Wall
   - Spawner
   - Ground
+  - Chair
+  - Prop
   layers:
   - Default
   - TransparentFX
