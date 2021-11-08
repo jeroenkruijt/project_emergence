@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     public PlayerMovement player;
     public NavMeshAgent agent;
     public GameObject upgrade;
+    public EnemySpawner spawner;
 
     Animator anim;
     public float attackSpeed = 1f;
@@ -17,6 +18,7 @@ public class EnemyController : MonoBehaviour
     private float hp = 100;
 
     private void Start() {
+        spawner = GameObject.FindGameObjectWithTag("Spawner").GetComponent<EnemySpawner>();
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         anim = GetComponent<Animator>();
@@ -36,7 +38,7 @@ public class EnemyController : MonoBehaviour
         if (hp <= 0) {
             Debug.Log("RIP I DIED");
             RollForUpgradeDrop();
-            GetComponent<EnemySpawner>().amountZombies -= 1;
+            spawner.amountZombies--;
             Destroy(gameObject);
         }
     }

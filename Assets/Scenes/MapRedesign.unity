@@ -15016,7 +15016,7 @@ GameObject:
   - component: {fileID: 459544549}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27031,7 +27031,7 @@ MonoBehaviour:
   shootForce: 100
   upwardForce: 0
   timeBetweenShooting: 0.4
-  spread: 1
+  spread: 0
   reloadTime: 1.5
   timeBetweenShots: 1
   magazineSize: 31

@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Car
   - Wall
+  - Spawner
   layers:
   - Default
   - TransparentFX
