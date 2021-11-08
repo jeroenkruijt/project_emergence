@@ -11,6 +11,7 @@ TagManager:
   - Car
   - Wall
   - Spawner
+  - Ground
   layers:
   - Default
   - TransparentFX

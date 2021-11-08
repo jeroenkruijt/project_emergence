@@ -61,9 +61,12 @@ public class blueprint : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 5000.0f)) {
             if (hit.distance < buildDistance) {
-                blueprintPrefab.transform.position = hit.point;
-                blueprintPrefab.transform.rotation = transform.rotation;
-                blueprintActive = true;
+                if (hit.collider.tag == "Ground") {
+                    blueprintPrefab.transform.position = hit.point;
+                    blueprintPrefab.transform.rotation = transform.rotation;
+                    blueprintActive = true;
+                } else { blueprintActive = false; }
+                
             } else {
                 blueprintActive = false;
             }
@@ -78,7 +81,7 @@ public class blueprint : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 5000.0f)) {
             if (hit.collider.tag == "Wall") {
                 GameObjectHit = hit.transform.gameObject;
-                Debug.Log(GameObjectHit);
+                //Debug.Log(GameObjectHit);
                 amountWalls--;
                 Destroy(GameObjectHit);
             }
