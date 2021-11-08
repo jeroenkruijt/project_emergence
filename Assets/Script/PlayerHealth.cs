@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -16,16 +17,17 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // Update is called once per frame
+    // Putting Arena here because we are going to be using the arena
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (currentHealth <= 0)
         {
-            TakeDamage(20);
+            SceneManager.LoadScene("Arena");
         }
-           
+    
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
 

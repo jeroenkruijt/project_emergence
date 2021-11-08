@@ -10,13 +10,18 @@ public class EnemySpawner : MonoBehaviour
     private float timer;
     private float timeElapsed = 0;
     private float spawnFreq = 5f;
+    public float amountZombies;
 
     public void SpawnZombies(int amount) {
 
         var spawnpnt = Random.Range(0, 2);
 
         for (int i = 0; i < amount; i++) {
-            Instantiate(zombie, spawnpoints[spawnpnt].transform.position, Quaternion.identity);
+            if (amountZombies < 20) {
+                Instantiate(zombie, spawnpoints[spawnpnt].transform.position, Quaternion.identity);
+                amountZombies++;
+            }
+            
         }
         timeElapsed = Time.time;
         
@@ -35,7 +40,6 @@ public class EnemySpawner : MonoBehaviour
 
     private int AmountZombies() {
         var amount = (timer * timer) * .0005f +1;
-        Debug.Log(Mathf.RoundToInt(amount));
         return Mathf.RoundToInt(amount);
     }
 
