@@ -36,11 +36,12 @@ public class EnemyController : MonoBehaviour
         if (hp <= 0) {
             Debug.Log("RIP I DIED");
             RollForUpgradeDrop();
+            GetComponent<EnemySpawner>().amountZombies -= 1;
             Destroy(gameObject);
         }
     }
     private void RollForUpgradeDrop() {
-        if (Random.Range(0, 10) < 2) {
+        if (Random.Range(0, 25) < 2) {
             SpawnUpgrade();
         }     
     }
