@@ -8,6 +8,8 @@ TagManager:
   - SpawnPoint
   - bullet
   - Bullet
+  - Car
+  - Wall
   layers:
   - Default
   - TransparentFX

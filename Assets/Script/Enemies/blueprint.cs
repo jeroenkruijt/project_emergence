@@ -16,6 +16,9 @@ public class blueprint : MonoBehaviour
     public GameObject WallPrefab;
     private bool building = false;
     private bool blueprintActive = false;
+    private int amountWalls;
+    private int wallsLimit = 3;
+    private GameObject GameObjectHit;
 
     private void Start() {
         cam = transform.Find("Main Camera").GetComponent<Camera>();
@@ -23,32 +26,23 @@ public class blueprint : MonoBehaviour
     }
 
     private void Update() {
-        /*/build wall in place of blueprint
-        if (Input.GetKeyDown(KeyCode.Q) && blueprintActive) {
-            Instantiate(WallPrefab, blueprintPrefab.transform.position, transform.rotation);
-            building = false;
-            blueprintActive = false;
-            blueprintPrefab.GetComponent<MeshRenderer>().enabled = blueprintActive;
-        } 
-        //show blueprint
-        if (Input.GetKeyDown(KeyCode.Q) && building == false) {
-            building = true;
-            RaycastBlueprint();
-        }*/
         switch(state) {
             case BuildState.Idle:
-                if (Input.GetKeyDown(KeyCode.Q)) { state = BuildState.Blueprint; }
+                if (Input.GetKeyDown(KeyCode.Q) && amountWalls < wallsLimit) { state = BuildState.Blueprint; }
+                if (Input.GetKeyDown(KeyCode.E)) { DestroyWall(); }
                 break;
             case BuildState.Blueprint:
                 building = true;
                 RaycastBlueprint();
                 if (Input.GetKeyDown(KeyCode.Q) && blueprintActive) { state = BuildState.Building; }
-                if (Input.GetKeyDown(KeyCode.Escape)) { state = BuildState.Idle; }
+                if (Input.GetKeyDown(KeyCode.Escape))               { state = BuildState.Idle; }
+                if (Input.GetKeyDown(KeyCode.E))                    { DestroyWall(); }
                 break;
             case BuildState.Building:
                 Instantiate(WallPrefab, blueprintPrefab.transform.position, transform.rotation);
                 building = false;
                 blueprintActive = false;
+                amountWalls++;
                 blueprintPrefab.GetComponent<MeshRenderer>().enabled = blueprintActive;
                 state = BuildState.Idle;
                 break;
@@ -70,12 +64,24 @@ public class blueprint : MonoBehaviour
                 blueprintPrefab.transform.position = hit.point;
                 blueprintPrefab.transform.rotation = transform.rotation;
                 blueprintActive = true;
-                Debug.Log(buildDistance);
             } else {
                 blueprintActive = false;
             }
         }
         //Set mesh renderer visible if blueprint is active and in build range
         blueprintPrefab.GetComponent<MeshRenderer>().enabled = blueprintActive;
+    }
+    private void DestroyWall() {
+        Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width * .5f, Screen.height * .5f, 0f));
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 5000.0f)) {
+            if (hit.collider.tag == "Wall") {
+                GameObjectHit = hit.transform.gameObject;
+                Debug.Log(GameObjectHit);
+                amountWalls--;
+                Destroy(GameObjectHit);
+            }
+        }
     }
 }
