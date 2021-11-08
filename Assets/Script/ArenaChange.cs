@@ -7,6 +7,10 @@ public class ArenaChange : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("Arena");
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Arena");
+        }
+        
     }
 }

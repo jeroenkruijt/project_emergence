@@ -5890,6 +5890,9 @@ MonoBehaviour:
   spawnpoints:
   - {fileID: 1504704561}
   - {fileID: 1918724852}
+  - {fileID: 130737587}
+  - {fileID: 152725079}
+  amountZombies: 0
 --- !u!4 &344756026
 Transform:
   m_ObjectHideFlags: 0
