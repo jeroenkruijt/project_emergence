@@ -62950,6 +62950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gunSpw
       objectReference: {fileID: 0}
+    - target: {fileID: 6055386296438346278, guid: c0cb92ca33b212e4d86526a6ab5e4e90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6864292239641249948, guid: c0cb92ca33b212e4d86526a6ab5e4e90, type: 3}
       propertyPath: m_RootOrder
       value: 1
