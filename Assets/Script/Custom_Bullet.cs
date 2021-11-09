@@ -128,4 +128,7 @@ public class Custom_Bullet : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, explosionRange);
     }
+    public void SetDamage(int _damage) {
+        explosionDamage = _damage;
+    }
 }
