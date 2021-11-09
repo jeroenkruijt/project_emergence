@@ -34,6 +34,7 @@ public class EnemyController : MonoBehaviour
         hp -= damage;
         Debug.Log(hp);
         checkIfDead();
+        Debug.Log(hp);
     }
     private void checkIfDead() {
         if (hp <= 0) {

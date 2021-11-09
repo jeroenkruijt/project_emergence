@@ -68,8 +68,8 @@ public class Custom_Bullet : MonoBehaviour
         }
 
         //Add a little delay, just to make sure everything works fine
-        //Invoke("Delay", 0.05f);
-        Destroy(gameObject);
+        Invoke("Delay", 0.05f);
+        //Destroy(gameObject);
         
         //Spawn second bullets and add forces (if second bullet attatched
         if (secondBullet == null) return;
@@ -94,10 +94,6 @@ public class Custom_Bullet : MonoBehaviour
     private void Delay()
     {
         Destroy(gameObject);
-    }
-
-    public void SetDamage(int _damage) {
-        explosionDamage = _damage;
     }
 
     private void OnCollisionEnter(Collision collision)
