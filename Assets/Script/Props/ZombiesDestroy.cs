@@ -14,11 +14,11 @@ public class ZombiesDestroy : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Car"))
+        if(other.CompareTag("Prop"))
         {
             if(coolDown <= 0f)
             {
-                other.GetComponent<props>().BreakProp(50);
+                other.GetComponent<props>().BreakProp(20);
                 coolDown = 2f / attackSpeed;
             }
         }

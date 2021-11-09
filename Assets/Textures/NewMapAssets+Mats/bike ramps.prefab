@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5726211195842118442}
   - component: {fileID: 7535474317272299488}
   - component: {fileID: 8255723927462882637}
+  - component: {fileID: -1088431697498892046}
   m_Layer: 0
   m_Name: bike ramps
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3048851310703494, guid: 31db2901bc795984282aa99db04f1164, type: 3}
+--- !u!114 &-1088431697498892046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8328173342065923637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e2c46e5a06f1ac41a7151222718f943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propsDamage: 100

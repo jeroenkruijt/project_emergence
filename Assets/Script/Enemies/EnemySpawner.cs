@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnZombies(int amount) {
 
-        var spawnpnt = Random.Range(0, 2);
+        var spawnpnt = Random.Range(0, spawnpoints.Length);
 
         for (int i = 0; i < amount; i++) {
             if (amountZombies < 20) {
