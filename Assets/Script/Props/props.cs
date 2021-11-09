@@ -18,7 +18,7 @@ public class props : MonoBehaviour
         currentDamage -= damageAmount;
         if (currentDamage <= 0)
         {
-            Debug.Log("destroyed");
+            //Debug.Log("destroyed");
             Destroy(gameObject);
         }
     }

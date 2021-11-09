@@ -50,7 +50,6 @@ public class Projectile_shooting : MonoBehaviour
     private void Update()
     {
         MyInput();
-        Debug.Log(damage);
         //Set ammo display, if it exists :D
         if (ammunitionDisplay != null)
             ammunitionDisplay.SetText(bulletsLeft / bulletsPerTap + " / " + magazineSize / bulletsPerTap);

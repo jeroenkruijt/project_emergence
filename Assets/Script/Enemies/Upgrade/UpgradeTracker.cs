@@ -39,9 +39,6 @@ public class UpgradeTracker : MonoBehaviour
     }
 
     public void UpgradeTest(Upgrades _upgrade) {
-        Debug.Log("Upgrade complete!");
-        Debug.Log(_upgrade.upgradeInfo.damage);
-
 
         damage += _upgrade.upgradeInfo.damage;
         shootForce += _upgrade.upgradeInfo.shootForce;

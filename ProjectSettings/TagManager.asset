@@ -16,6 +16,8 @@ TagManager:
   - Prop
   - UpgradeTracker
   - Gun
+  - Score
+  - WaveInfo
   layers:
   - Default
   - TransparentFX
