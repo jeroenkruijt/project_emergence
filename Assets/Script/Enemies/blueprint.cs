@@ -17,6 +17,7 @@ public class blueprint : MonoBehaviour
     private bool building = false;
     private bool blueprintActive = false;
     private int amountWalls;
+    [SerializeField]
     private int wallsLimit = 3;
     private GameObject GameObjectHit;
 

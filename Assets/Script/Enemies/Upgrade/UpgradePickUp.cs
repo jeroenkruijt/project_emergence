@@ -6,18 +6,19 @@ public class UpgradePickUp : Interactable
 {
     public bool notPickedUp = true;
     public Upgrades upgrade;
+    public UpgradeTracker tracker;
     private void Start() {
-        //PickUpUpgrade();
+        tracker = GameObject.FindGameObjectWithTag("UpgradeTracker").GetComponent<UpgradeTracker>();
     }
     private void PickUpUpgrade() {
 
         // TODO: give weapon the power up
-
+        tracker.UpgradeTest(upgrade);
         gameObject.SetActive(notPickedUp);
     }
     public override string GetDescription() {
         if (notPickedUp) return "<color=yellow>" + upgrade.upgradeText;
-        return "you shouldnt be able to read this.";
+        return "";
     }
     /*
     public override string GetDescription() {

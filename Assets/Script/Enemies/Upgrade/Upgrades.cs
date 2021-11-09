@@ -10,6 +10,7 @@ public class Upgrades : ScriptableObject
     public string upgradeText;
     [System.Serializable]
     public class Upgrade {
+        public int damage;
         public float shootForce;
         public float upwardForce;
         public float timeBetweenShooting;
@@ -18,6 +19,7 @@ public class Upgrades : ScriptableObject
         public float timeBetweenShots;
         public int magazineSize;
         public int bulletsPerTap;
+        public int bulletSplit;
     }
     
     

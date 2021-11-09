@@ -10,6 +10,7 @@ public class Projectile_shooting : MonoBehaviour
     public float upwardForce;
 
     [Header("Set the basic stats:")]
+    public int damage = 10;
     public float timeBetweenShooting;
     public float spread;
     public float reloadTime;
@@ -28,6 +29,7 @@ public class Projectile_shooting : MonoBehaviour
     [Header("two points for shooting coming from going to:")]
     public Camera fpsCam;
     public Transform attackPoint;
+    public Transform bulletExitPoint;
 
     [Header("grapics:")]
     public GameObject muzzleFlash;
@@ -48,7 +50,7 @@ public class Projectile_shooting : MonoBehaviour
     private void Update()
     {
         MyInput();
-
+        Debug.Log(damage);
         //Set ammo display, if it exists :D
         if (ammunitionDisplay != null)
             ammunitionDisplay.SetText(bulletsLeft / bulletsPerTap + " / " + magazineSize / bulletsPerTap);
@@ -101,9 +103,12 @@ public class Projectile_shooting : MonoBehaviour
         Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Just add spread to last direction
 
         //Instantiate bullet/projectile
-        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity); //store instantiated bullet in currentBullet
+        GameObject currentBullet = Instantiate(bullet, bulletExitPoint.position, Quaternion.identity); //store instantiated bullet in currentBullet
         //Rotate bullet to shoot direction
         currentBullet.transform.forward = directionWithSpread.normalized;
+
+        //Give bullet damage value
+        currentBullet.GetComponent<Custom_Bullet>().SetDamage(damage);
 
         //Add forces to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
@@ -147,6 +152,21 @@ public class Projectile_shooting : MonoBehaviour
         //Fill magazine
         bulletsLeft = magazineSize;
         reloading = false;
+    }
+    public void ChangeDamage(int _damage) {
+        damage += _damage;
+    }
+    
+    public void UpdateWeaponStats(int _damage, float _shootForce, float _upwardForce, float _timeBetweenShooting, float _spread, float _reloadTime, float _timeBetweenShots, int _magazineSize, int _bulletsPerTap) {
+        damage += _damage;
+        shootForce += _shootForce;
+        upwardForce += _upwardForce;
+        timeBetweenShooting += _timeBetweenShooting;
+        spread += _spread;
+        reloadTime += _reloadTime;
+        timeBetweenShots += _timeBetweenShots;
+        magazineSize += _magazineSize;
+        bulletsPerTap += _bulletsPerTap;
     }
 }
 

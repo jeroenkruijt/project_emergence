@@ -29,7 +29,7 @@ public class ShootScript : MonoBehaviour
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
             //testing what if the variable gets filled correctly 
-            Debug.Log(hit.transform.name);
+            //Debug.Log(hit.transform.name);
 
             //gets the value for target() script is in the object 
             Target target = hit.transform.GetComponent<Target>();

@@ -32,6 +32,7 @@ public class EnemyController : MonoBehaviour
 
     public void takeDamage(float damage) {
         hp -= damage;
+        Debug.Log(hp);
         checkIfDead();
     }
     private void checkIfDead() {
