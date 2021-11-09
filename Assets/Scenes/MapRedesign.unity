@@ -6733,7 +6733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189292393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.63, z: 0}
+  m_LocalPosition: {x: -35.4, y: 4.51, z: -0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1300742923}
@@ -13352,7 +13352,7 @@ GameObject:
   - component: {fileID: 373786052}
   - component: {fileID: 373786054}
   - component: {fileID: 373786053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Minimap_cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22797,7 +22797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 662085654}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28683,7 +28683,7 @@ MonoBehaviour:
   allowButtonHold: 1
   fpsCam: {fileID: 1588966753}
   attackPoint: {fileID: 189292394}
-  bulletExitPoint: {fileID: 183522133}
+  bulletExitPoint: {fileID: 189292394}
   muzzleFlash: {fileID: 2957657415812638113, guid: 50f6becef77af1d4b99006061c5e99de, type: 3}
   ammunitionDisplay: {fileID: 667834573}
   Shotsound: {fileID: 0}
@@ -56750,7 +56750,7 @@ GameObject:
   - component: {fileID: 1588966751}
   - component: {fileID: 1588966750}
   - component: {fileID: 1588966754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
