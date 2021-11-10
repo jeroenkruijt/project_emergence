@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26733ddc-5b74-4e5f-b449-9bb8f2cc8871" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/WeaponSwap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.project_emergence/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Arena.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapRedesign.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/WeaponSwap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/WeaponSwap.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +32,9 @@
       <option value="$PROJECT_DIR$/Assets/Script/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/ShootScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Destroy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/PauseMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/WeaponSwap.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Custom_Bullet.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yPuZ2qpegboQyfWkRg6e4LJLF4" />
@@ -115,6 +111,7 @@
       <workItem from="1635595773948" duration="625000" />
       <workItem from="1635689572669" duration="710000" />
       <workItem from="1635759988031" duration="1599000" />
+      <workItem from="1636573842580" duration="1031000" />
     </task>
     <servers />
   </component>

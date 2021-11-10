@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Custom_Bullet : MonoBehaviour
@@ -27,8 +25,10 @@ public class Custom_Bullet : MonoBehaviour
     [Header("Second bullets (Spawn after explosion)")]
     public GameObject secondBullet;
     public int sb_amount;
-    public float sb_forwardForce, sb_upwardForce, sb_randomForce;
-
+    public float sb_forwardForce;
+    public float sb_upwardForce;
+    public float sb_randomForce;
+        
     int collisions;
     PhysicMaterial physics_mat;
 
@@ -56,11 +56,9 @@ public class Custom_Bullet : MonoBehaviour
         Collider[] enemies = Physics.OverlapSphere(transform.position, explosionRange, whatIsEnemies);
         for (int i = 0; i < enemies.Length; i++)
         {
-            //Get component of enemy and call Take Damage
-
-            //Just an example!
+            //Get component of enemy and call Take Damage function on it
             enemies[i].GetComponent<EnemyController>().takeDamage(explosionDamage);
-            //Debug.Log(enemies[i]);
+            
 
             //Add explosion force (if enemy has a rigidbody)
             if (enemies[i].GetComponent<Rigidbody>())
@@ -122,7 +120,7 @@ public class Custom_Bullet : MonoBehaviour
         rb.useGravity = useGravity;
     }
 
-    /// Just to visualize the explosion range
+    // Just to visualize the explosion range
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
