@@ -137,7 +137,7 @@ MonoBehaviour:
   explosionRange: 5
   explosionForce: 5
   maxCollisions: 10
-  maxLifetime: 1
+  maxLifetime: 1.1
   explodeOnTouch: 1
   secondBullet: {fileID: 0}
   sb_amount: 0
