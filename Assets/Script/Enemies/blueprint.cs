@@ -88,4 +88,10 @@ public class blueprint : MonoBehaviour
             }
         }
     }
+    public int CurrentWalls() {
+        return (wallsLimit - amountWalls);
+    }
+    public int WallsLimit() {
+        return wallsLimit;
+    }
 }
