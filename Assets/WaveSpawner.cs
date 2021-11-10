@@ -6,7 +6,7 @@ using System.Collections;
 public class WaveSpawner : MonoBehaviour
 {
 
-    public enum SpawnState { SPAWNING, WAITING, COUNTING };
+    public enum SpawnState { SPAWNING, WAITING, COUNTING, STOP };
 
     [System.Serializable]
     public class Wave {
@@ -25,14 +25,16 @@ public class WaveSpawner : MonoBehaviour
     public float waveCountdown;
     
     public WaveDisplay ui;
+    public ArenaChange door;
 
     private float searchCountdown = 1f;
+    private bool stopSpawning = false;
 
     private SpawnState state = SpawnState.COUNTING;
 
     private void Start() {
         waveCountdown = timeBetweenWaves;
-
+        door = GameObject.FindGameObjectWithTag("Door").GetComponent<ArenaChange>();
         ui = GameObject.FindGameObjectWithTag("WaveInfo").GetComponent<WaveDisplay>();
 
         if (spawnPoints.Length == 0) {
@@ -70,9 +72,12 @@ public class WaveSpawner : MonoBehaviour
         waveCountdown = timeBetweenWaves;
 
         if (nextWave + 1 > waves.Length - 1) {
-            nextWave = 0;
-            ui.SetWaveText("All waves completed! Looping...");
-            // Unluck door here?
+            //nextWave = 0;
+            ui.SetWaveText("The door to the arena cracks open...");
+            // Unluck door here
+            door.unlocked = true;
+            stopSpawning = true;
+            state = SpawnState.STOP;
         } else {
             nextWave++;
         }
@@ -91,16 +96,18 @@ public class WaveSpawner : MonoBehaviour
     }
 
     IEnumerator SpawnWave(Wave _wave) {
-        ui.SetWaveText("Get ready for: " + _wave.name);
-        state = SpawnState.SPAWNING;
 
-        for (int i = 0; i < _wave.count; i++) {
-            SpawnEnemy(_wave.enemy);
-            yield return new WaitForSeconds(1f / _wave.rate);
+        if (!stopSpawning) {
+            ui.SetWaveText("Get ready for " + _wave.name);
+            state = SpawnState.SPAWNING;
+
+            for (int i = 0; i < _wave.count; i++) {
+                SpawnEnemy(_wave.enemy);
+                yield return new WaitForSeconds(1f / _wave.rate);
+            }
+
+            state = SpawnState.WAITING;
         }
-
-        state = SpawnState.WAITING;
-
         yield break;
     }
 

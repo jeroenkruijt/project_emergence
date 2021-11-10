@@ -22,4 +22,7 @@ public class props : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    public int GetPropHP() {
+        return currentDamage;
+    }
 }

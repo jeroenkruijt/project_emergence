@@ -5,11 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ArenaChange : MonoBehaviour
 {
+
+    public bool unlocked = false;
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("Arena");
+
+        if (unlocked) {
+            if (other.CompareTag("Player"))
+            {
+                SceneManager.LoadScene("Arena");
+            }
         }
         
     }

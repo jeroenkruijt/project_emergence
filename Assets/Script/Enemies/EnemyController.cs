@@ -51,6 +51,8 @@ public class EnemyController : MonoBehaviour
     }
 
     private void SpawnUpgrade() {
+        //randomize upgrade
+
         Instantiate(upgrade, transform.position, Quaternion.identity);
     }
 

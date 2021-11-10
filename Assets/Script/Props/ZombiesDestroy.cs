@@ -14,7 +14,7 @@ public class ZombiesDestroy : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Prop"))
+        if(other.CompareTag("Prop") || other.CompareTag("Wall"))
         {
             if(coolDown <= 0f)
             {

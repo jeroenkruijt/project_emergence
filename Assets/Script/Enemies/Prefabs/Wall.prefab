@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 977489385265404226}
   - component: {fileID: 9169141381855168790}
   - component: {fileID: 5607165747046934995}
+  - component: {fileID: 4523307390535736177}
+  - component: {fileID: 1811588168222718491}
   m_Layer: 7
   m_Name: Wall
   m_TagString: Wall
@@ -61,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6135627dfec005c49b67f107858eab33, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,3 +114,31 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &4523307390535736177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8725692311895854196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e2c46e5a06f1ac41a7151222718f943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propsDamage: 300
+--- !u!114 &1811588168222718491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8725692311895854196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4507d9bb5dde1734fbb415ae37db98b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthy: {fileID: 2100000, guid: 6135627dfec005c49b67f107858eab33, type: 2}
+  damaged: {fileID: 2100000, guid: 5bb065d4dbbc0714c83fc956ff7a4b52, type: 2}
+  broken: {fileID: 2100000, guid: 98bbf85531f4f8c4dbd6d9f7014b94d3, type: 2}
